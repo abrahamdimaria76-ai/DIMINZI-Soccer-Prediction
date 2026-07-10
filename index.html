@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Habesha Predicts — Match Night Predictions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-mark">☕</span>
+      <span class="brand-name">Habesha Predicts</span>
+    </div>
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="matches">Matches</button>
+      <button class="tab-btn" data-tab="leaderboard">Leaderboard</button>
+    </nav>
+    <div class="user-box">
+      <input id="username-input" type="text" placeholder="Your name" maxlength="20">
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">ጨዋታ ⋅ Match Night</p>
+    <h1 class="hero-title">Predict the score.<br>Earn your bunna points.</h1>
+    <p class="hero-sub">Pick the results, rack up points, and see who in the diaspora really knows the game.</p>
+  </div>
+  <div class="hero-pour" aria-hidden="true">
+    <svg viewBox="0 0 200 200" class="pour-svg">
+      <circle cx="100" cy="100" r="88" class="pour-ring pour-ring-track"/>
+      <circle cx="100" cy="100" r="88" class="pour-ring pour-ring-fill" id="pour-fill"/>
+      <text x="100" y="108" text-anchor="middle" class="pour-label" id="pour-label">0 pts</text>
+    </svg>
+  </div>
+</section>
+
+<main id="matches-panel" class="panel active">
+  <div class="panel-inner">
+    <div class="panel-head">
+      <h2>Upcoming fixtures</h2>
+      <p class="panel-note">Lock your prediction before kickoff. Exact score = 3 pts, correct winner/draw = 1 pt.</p>
+    </div>
+    <div id="matches-list" class="matches-list"><!-- rendered by app.js --></div>
+  </div>
+</main>
+
+<main id="leaderboard-panel" class="panel">
+  <div class="panel-inner">
+    <div class="panel-head">
+      <h2>Leaderboard</h2>
+      <p class="panel-note">Points update after results are entered by an admin.</p>
+    </div>
+    <table class="leaderboard-table">
+      <thead>
+        <tr><th>#</th><th>Name</th><th>Points</th><th>Exact</th></tr>
+      </thead>
+      <tbody id="leaderboard-body"><!-- rendered by app.js --></tbody>
+    </table>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>Built for the Habesha football community. Data resets are visible to everyone — play fair. ⚽</p>
+</footer>
+
+<script type="module" src="firebase-config.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
