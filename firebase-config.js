@@ -1,17 +1,15 @@
-// ── STEP 1 OF SETUP ──────────────────────────────────────────────
-// Replace the values below with YOUR Firebase project's config.
-// Get these from: Firebase Console > Project Settings > Your apps > SDK setup
-// Full instructions are in README.md.
+// DIMINZI SOCCER APP — Firebase config
+// NOTE: If your repo already has a real firebase-config.js with actual project
+// values, DO NOT overwrite it with this file — keep your existing one.
+// This is only a template for reference / for a fresh setup.
 //
-// Until you fill these in, the app runs in DEMO MODE using your browser's
-// local storage — it works, but only you can see your own predictions.
-// Once you add real keys, everyone using the site shares the same data.
+// Get these values from: Firebase Console > Project Settings > General > Your apps > SDK setup and configuration
 
-export const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+const firebaseConfig = {
+  apiKey: "YOUR_FIREBASE_API_KEY",
+  authDomain: "YOUR_PROJECT.firebaseapp.com",
   projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
+  storageBucket: "YOUR_PROJECT.appspot.com",
   messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  appId: "YOUR_APP_ID",
 };
