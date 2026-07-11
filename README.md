@@ -27,15 +27,13 @@ shared leaderboard shows who's on top.
 
 ## Step 2 — Push it to your GitHub repo
 
-```
-cd habesha-predicts
+cd DIMINZI
 git init                     # skip if the repo is already initialized
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git remote add origin https://github.com/abrahamdimaria76-ai/DIMINZI-Soccer-Prediction.git
 git add .
-git commit -m "Initial version of Habesha Predicts"
+git commit -m "Initial version of DIMINZI Soccer Prediction"
 git branch -M main
 git push -u origin main
-```
 
 ## Step 3 — Turn on GitHub Pages
 
