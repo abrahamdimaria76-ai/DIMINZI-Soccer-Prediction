@@ -1,4 +1,4 @@
-# Habesha Predicts
+# DIMINZI SOCCER APP
 
 A soccer score-prediction app: people pick scores for upcoming matches, points are
 scored automatically (3 for an exact score, 1 for the correct winner/draw), and a
